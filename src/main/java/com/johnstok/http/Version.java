@@ -105,7 +105,7 @@ public class Version {
      *
      * @return Version number as an integer.
      */
-    public int major() { // TODO: Rename to getMajor()?
+    public int getMajor() {
         return _major;
     }
 
@@ -115,7 +115,7 @@ public class Version {
      *
      * @return Version number as an integer.
      */
-    public int minor() { // TODO: Rename to getMinor()?
+    public int getMinor() {
         return _minor;
     }
 
@@ -123,6 +123,10 @@ public class Version {
     /** {@inheritDoc} */
     @Override
     public String toString() {
-        return "HTTP/" + _major + "." + _minor;
+        return
+            "HTTP/"                                                //$NON-NLS-1$
+            + _major
+            + "."                                                  //$NON-NLS-1$
+            + _minor;
     }
 }

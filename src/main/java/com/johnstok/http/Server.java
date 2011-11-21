@@ -44,4 +44,12 @@ public interface Server {
      * Stop the server listening.
      */
     void close();
+
+
+    /**
+     * Query whether the server is listening for requests.
+     *
+     * @return True if the server is listening; false otherwise.
+     */
+    boolean isListening();
 }

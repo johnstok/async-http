@@ -19,6 +19,5 @@
 
     <artifactId>async-http</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <description>An asynchronous API for HTTP.</description>
 
 </project>

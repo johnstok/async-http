@@ -1,4 +1,4 @@
-# Async HTTP
+# Async-HTTP
 
 Async-HTTP is an API for implementing event driven HTTP servers on the JVM.
 
