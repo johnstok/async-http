@@ -20,47 +20,15 @@
 package com.johnstok.http;
 
 
-import java.net.InetSocketAddress;
-
-
 /**
- * A HTTP server.
+ * A TCP connection.
  *
  * @author Keith Webster Johnston.
  */
-public interface Server {
+public interface Connection {
 
     /**
-     * Start the server listening.
-     *
-     * @param address        The address at which to listen.
-     * @param requestFactory The factory for requests.
+     * Handle the opening of a new connection.
      */
-    void listen(InetSocketAddress address,
-                RequestFactory requestFactory);
-
-    /**
-     * Start the server listening.
-     *
-     * @param address        The address at which to listen.
-     * @param requestFactory The factory for requests.
-     * @param connection     The connection handler.
-     */
-    void listen(InetSocketAddress address,
-                RequestFactory requestFactory,
-                Connection connection);
-
-
-    /**
-     * Stop the server listening.
-     */
-    void close();
-
-
-    /**
-     * Query whether the server is listening for requests.
-     *
-     * @return True if the server is listening; false otherwise.
-     */
-    boolean isListening();
+    void onOpen();
 }
