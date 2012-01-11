@@ -87,5 +87,5 @@ public interface Response {
      * @throws IllegalStateException If called out of sequence; if called more
      *  than once.
      */
-    void writeEnd(Map<String, List<String>> trailers);
+    void writeEnd(Map<String, ? extends List<String>> trailers);
 }
