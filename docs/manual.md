@@ -1,5 +1,8 @@
 # Manual
 
+# Handling a request
+Is onBody called for a method such as GET?
+
 # Transmitting a response
 State machine
 

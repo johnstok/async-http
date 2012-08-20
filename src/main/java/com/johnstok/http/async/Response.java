@@ -17,11 +17,12 @@
  * You should have received a copy of the GNU General Public License
  * along with async-http. If not, see <http://www.gnu.org/licenses/>.
  *---------------------------------------------------------------------------*/
-package com.johnstok.http;
+package com.johnstok.http.async;
 
 import java.nio.ByteBuffer;
 import java.util.List;
 import java.util.Map;
+import com.johnstok.http.Version;
 
 
 /**
